@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, countDistinct
 from pyspark.sql.types import StructType, IntegerType, StructField, StringType
 
-spark_session = SparkSession.builder.appName('spark-assignment').getOrCreate()
+spark_session = SparkSession.builder.appName('assignment 1').getOrCreate()
 
 purchase_schema = StructType([
     StructField("customer", IntegerType(), True),
