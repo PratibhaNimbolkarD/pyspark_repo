@@ -28,5 +28,28 @@
 * Data filtered to include only entries within the last 7 days using datediff and filter, and actions performed by each user within this period calculated by grouping and counting.
 
 
+### **Question_4**
+* Import required PySpark modules and initialize a Spark session.
+* Define a custom schema to match the JSON structure.
+* Create a function to read a JSON file with the provided schema.
+* Read the JSON file into a DataFrame using the defined function.
+* Flatten the DataFrame by selecting necessary columns and exploding the employees array.
+* Count the records before and after flattening to observe the difference.
+* Apply explode and posexplode functions to the DataFrame to understand their effects.
+* Filter the DataFrame to find records with a specific empId.
+* Convert column names to snake case using a custom function.
+* Add a new column with the current date and extract year, month, and day from it.
+* Display the DataFrame after each transformation to observe changes.
 
 
+### **Question_5**
+* Initialize Spark session and define custom schemas for employee_df, department_df, and country_df.
+* Create DataFrames employee_df, department_df, and country_df with the defined schemas and sample data.
+* Group employee_df by department and calculate the average salary for each department.
+* Filter employee_df to retrieve employee names starting with 'm' and join with department_df to get corresponding department names.
+* Create a new column 'bonus' in employee_df by multiplying 'salary' by 2.
+* Reorder columns in employee_df to match the desired order of column names.
+* Define a function dynamic_join to perform inner, left, and right joins between employee_df and department_df based on the specified join type.
+* Update the 'State' column in employee_df with corresponding country names and rename it to 'country_name'.
+* Define a function column_to_lower to convert column names to lowercase and apply it to the DataFrame.
+* Add a new column 'load_date' with the current date to the DataFrame.
