@@ -5,7 +5,7 @@ from src.assignment_4.util import *
 class TestAssignment4(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.spark =SparkSession.builder.master("local[*]").appName("Krishna").getOrCreate()
+        cls.spark =SparkSession.builder.appName("assignment_4").getOrCreate()
 
     @classmethod
     def tearDownClass(cls):
