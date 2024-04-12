@@ -9,7 +9,7 @@ class TestAssignment5(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.spark = SparkSession.builder.master("local[*]").appName("Krishna").getOrCreate()
+        cls.spark = SparkSession.builder.appName("assignment_5").getOrCreate()
 
 
     @classmethod
