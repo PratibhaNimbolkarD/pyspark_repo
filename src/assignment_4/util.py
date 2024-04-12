@@ -3,7 +3,7 @@ from pyspark.sql.functions import explode, current_date, year, month, day, posex
 from pyspark.sql.types import StringType, StructType, IntegerType, StructField, ArrayType
 
 def create_session():
-    spark=SparkSession.builder.master("local[*]").appName("Krishna").getOrCreate()
+    spark=SparkSession.builder.appName("assignment_4").getOrCreate()
     return spark
 
 
